@@ -1,0 +1,148 @@
+1.what is the diffrence between compile time and run time?
+Ans:Compile time is the time at which the source code is converted into an executable code while the run time is the time at which the executable code starts running.
+
+
+
+2.Types of variables.
+Ans:A variable is a container which holds the value while the java program is executed, a variable is name associated with some values Or its a storage.
+examples: String str="Namaskara";
+          int a=8;
+		  float percentage=98.3;
+two types of variables
+1.local variable:A local variable in java is a variable that is declared whithin the body of a method and and that variable can be accessed in that method only
+example:public static void addition{
+         int val1=1;
+		 int val2=4;
+		 int sum=val1+val2;
+		 System.out.println("addition of two numbers:"+sum);
+		 }
+2.global variable:A global variable is one that can be accessible in all parts of a progarm. A static keyword can used and these are the variables that can be used by the entire class.		 
+example:public class Globals{ 
+       public static int globalValue=1;
+}	   
+
+4.method
+methods:A method is a block of code which only runs when it is called or it is a collection of statements that are groupeg togehter to perform an operation.And they can be used to perform certain actions.
+example:public class AdditionExample{
+         public static void main(String[] add)
+		 {
+		 System.out.println("invoked main");
+		 addition();
+		 }
+		 public static void addition{
+         int val1=1;
+		 int val2=4;
+		 int sum=val1+val2;
+		 System.out.println("addition of two numbers:"+sum);
+		 }
+		 
+}
+parameters:a parameter is a value that can pass to a method in java and it can be act as variablees inside the method.
+example: public class Name{
+         public static void main(String[] args)
+		 {
+		 System.out.println("invoked main");
+		 info("Ravi");
+		 }
+          public static void info(String personName);
+		  {
+		  System.out.println("personName:"+personName);
+		  }
+		}
+in above example String personName is a parameter.
+Argument:When a method is called the values that are passed in the call are called as arguments.
+exampl:public class Name{
+         public static void main(String[] args)
+		 {
+		 System.out.println("invoked main");
+		 info("Ravi");
+		 }
+          public static void info(String personName);
+		  {
+		  System.out.println("personName:"+personName);
+		  }
+		}
+in above example the ravi is an argument.
+return type:Every method in java is declared with a return type and return type may be premitive types such as int,float,double etc.
+example:public class ReturnType{
+        
+		public static void main(String[] arg)
+		{
+		System.out.println("invoked main");
+		 add(10,20);
+		 }
+ 		public int add(int val1,int val2){
+		int sum=val1+val2;
+		return sum;
+		}
+		}
+5.Encapsulation:It is a mechanism of wrapping code and data together into a single unit.
+example:public class Test{
+       private String email="xworkz@gmail.com";
+	   public static void main(String[] args){
+	   System.out.println("invoked main");
+	   System.out.println("email:"+email);
+	   }
+	   }
+	   in above example the variable email can be declared as private and it is accessible only in this class and not accessible by other class.
+6.Array:Array is collection of similar types of data.
+example: int[] numbers={10,20,30,40,50};
+          String[] names={"naseem","vena","mala"};
+		  
+		  
+		  
+7.method overloading:two or more methods can have same names but with different parameters.		  
+example1:public class Book
+{
+	public static void main(String[] args){
+				System.out.println("invoked main");
+				reading("core JAVA");
+				reading("core JAVA","Dr.R.S.Nageswara Rao");
+				reading("core JAVA",12);
+				reading(1,"core JAVA",97.0f,'A');
+	}
+	
+	public static void reading(String book)
+	{
+		
+		System.out.println("invoked reading");
+		System.out.println("arg book:  "+book);
+		
+	}
+	public static void reading(String book,String writer)
+	{
+		System.out.println("invoked holding with two parameters ");
+		System.out.println("String and String");
+		System.out.println("arg1 book :   "+book);
+		System.out.println("arg2 writer   "+writer);
+		
+	}
+	}
+exampl2:public class Cakes{
+	public static void main(String[] fav){
+				System.out.println("invoked main");
+				eating("Chocolate","vanilla");
+				eating("Pineapple",1);
+				eating(1,"VanillaPastrey",75.5f);
+
+
+	}
+
+	public static void eating(String cake,String flavours)
+	{
+		System.out.println("invoked eating holding with two parameters ");
+		System.out.println("String and String");
+		System.out.println("arg1 cake  : "+cake);
+		System.out.println("arg2 Pastry  : "+flavours);
+		
+	}
+	
+	public static void eating(String pastry,int noOfCakes)
+	{
+		
+		System.out.println("invoked eating holding with two parameters ");
+		System.out.println("String and int");
+		System.out.println("arg1 Patrey :"+pastry);
+		System.out.println("arg2 noOfCakes : "+noOfCakes);
+	}
+	}
