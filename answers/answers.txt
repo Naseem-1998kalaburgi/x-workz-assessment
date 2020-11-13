@@ -123,7 +123,7 @@ exampl2:public class Cakes{
 				System.out.println("invoked main");
 				eating("Chocolate","vanilla");
 				eating("Pineapple",1);
-				eating(1,"VanillaPastrey",75.5f);
+				
 
 
 	}
